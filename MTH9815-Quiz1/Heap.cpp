@@ -31,11 +31,7 @@ std::pair<std::size_t, std::size_t> Heap::GetChildren(std::size_t idx) const {
     return std::make_pair((idx << 1) + 1, (idx << 1) + 2);
 }
 
-int Heap::Top() const {
-    return data_.front();
-}
-
-void Heap::Push(int elem) {
+void Heap::Add(int elem) {
     data_.push_back(elem);
     
     std::size_t curr = data_.size() - 1;
@@ -46,7 +42,7 @@ void Heap::Push(int elem) {
     }
 }
 
-int Heap::Pop() {
+int Heap::Remove() {
     
     int res = data_.front();
     
@@ -90,54 +86,6 @@ int Heap::Pop() {
         }
     }
 //    this->Print();
-    return res;
-}
-
-int Heap::PushPop(int elem) {
-    if (elem >= this->Top()) {
-        return elem;
-    }
-    
-    int res = data_.front();
-    data_.front() = elem;
-    
-    std::size_t curr = 0;
-    while (true) {
-        std::size_t l_child;
-        std::size_t r_child;
-        std::tie(l_child, r_child) = this->GetChildren(curr);
-        
-        bool l_wrong = (l_child < data_.size()) && (data_[curr] < data_[l_child]);
-        bool r_wrong = (r_child < data_.size()) && (data_[curr] < data_[r_child]);
-        
-        int switch_r;
-        
-        if (l_wrong && r_wrong) {
-            if (data_[l_child] > data_[r_child]) {
-                switch_r = 0;
-            } else {
-                switch_r = 1;
-            }
-        } else if (l_wrong) {
-            switch_r = 0;
-        } else if (r_wrong) {
-            switch_r = 1;
-        } else {
-            break;
-        }
-        
-        switch (switch_r) {
-            case 0:
-                std::swap(data_[curr], data_[l_child]);
-                curr = l_child;
-                break;
-            case 1:
-                std::swap(data_[curr], data_[r_child]);
-                curr = r_child;
-                break;
-        }
-    }
-    
     return res;
 }
 

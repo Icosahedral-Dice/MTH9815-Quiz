@@ -24,10 +24,8 @@ public:
     Heap() = default;
     ~Heap() = default;
     
-    int Top() const;
-    void Push(int elem);
-    int Pop();
-    int PushPop(int elem);
+    void Add(int elem);
+    int Remove();
     
     bool empty() const;
 };

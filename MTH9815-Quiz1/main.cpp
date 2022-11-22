@@ -19,8 +19,10 @@ void PrintArray(const int* arr, std::size_t size) {
 void TestQuickSort() {
     int arr[] = {1, 1, 4, 5, 1, 4};
     int count = sizeof(arr) / sizeof(arr[0]);
+    std::cout << "Original:\n";
     PrintArray(arr, count);
     QuickSort(arr, count);
+    std::cout << "Sorted:\n";
     PrintArray(arr, count);
 
 }
@@ -31,13 +33,12 @@ void TestMaxHeap() {
     Heap heap;
     
     for (int elem : arr) {
-        heap.Push(elem);
+        heap.Add(elem);
     }
     
-    std::cout << heap.PushPop(9) << std::endl;
-    
+    std::cout << "Pop elements in descending order." << std::endl;
     while (!heap.empty()) {
-        std::cout << heap.Pop() << '\t';
+        std::cout << heap.Remove() << '\t';
     }
     std::cout << std::endl;
     
