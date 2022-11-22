@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CA44EE69292C860C00597BFF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA44EE68292C860C00597BFF /* main.cpp */; };
+		CA44EE73292D4C8D00597BFF /* Heap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA44EE71292D4C8D00597BFF /* Heap.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +27,8 @@
 		CA44EE65292C860C00597BFF /* MTH9815-Quiz1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "MTH9815-Quiz1"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA44EE68292C860C00597BFF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		CA44EE6F292C878800597BFF /* QuickSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
+		CA44EE71292D4C8D00597BFF /* Heap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Heap.cpp; sourceTree = "<group>"; };
+		CA44EE72292D4C8D00597BFF /* Heap.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Heap.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				CA44EE68292C860C00597BFF /* main.cpp */,
+				CA44EE71292D4C8D00597BFF /* Heap.cpp */,
+				CA44EE72292D4C8D00597BFF /* Heap.hpp */,
 				CA44EE6F292C878800597BFF /* QuickSort.h */,
 			);
 			path = "MTH9815-Quiz1";
@@ -122,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA44EE69292C860C00597BFF /* main.cpp in Sources */,
+				CA44EE73292D4C8D00597BFF /* Heap.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
