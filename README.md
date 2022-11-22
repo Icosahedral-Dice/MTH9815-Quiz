@@ -1,2 +1,2 @@
-# MTH9815-Quiz1
+# MTH9815-Quiz
 Quick sort and max heap.
