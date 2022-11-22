@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		CA44EE65292C860C00597BFF /* MTH9815-Quiz1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "MTH9815-Quiz1"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA44EE68292C860C00597BFF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CA44EE6F292C878800597BFF /* QuickSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				CA44EE68292C860C00597BFF /* main.cpp */,
+				CA44EE6F292C878800597BFF /* QuickSort.h */,
 			);
 			path = "MTH9815-Quiz1";
 			sourceTree = "<group>";
